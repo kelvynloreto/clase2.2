@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
-export const Users = ({user}) => {
+export const Users = () => {
+    const [user, setUser] = useState();
+    useEffect(() => {
+        const URL = "https://randomuser.me/api/";
+        axios
+          .get(URL)
+          .then((resp) => setUser(resp.data.results[0]))
+          .catch((error) => console.log(error.message));
+          }, []);
   return (
     <div className="card_users">
       <h2>
