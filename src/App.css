@@ -15,6 +15,7 @@
 }
 
 .card_users{
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,4 +24,5 @@
     gap: 1em; 
     padding: 1em;
     background-color: rgb(171, 154, 189);
+    margin: 1em;
 }
