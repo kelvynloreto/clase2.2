@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    overflow-y: hidden;
+ }
+
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(72, 98, 122);
+    gap: 1em;
+}
+
+.card_users{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px double black;
+    gap: 1em; 
+    padding: 1em;
+    background-color: rgb(171, 154, 189);
+}
